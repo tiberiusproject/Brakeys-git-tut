@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cube : MonoBehaviour
+public class Cube : MonoBehaviour, IPooledObject
 {
-    public float upForce = .8f;
-    public float sideForce = .18f;
+    public float upForce = .5f;
+    public float sideForce = .3f;
 
     //use this for initialization
-    void Start()
+    public void OnObjectSpawn ()
     {
         //calculates a random force
         float xForce = Random.Range(-sideForce, sideForce);
-        float yForce = Random.Range(upForce / 2f, upForce);
+        float yForce = Random.Range(upForce / 0.1f, upForce);
         float zForce = Random.Range(-sideForce, sideForce);
 
         //adds the random force to the rgb

@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class CubeSpawner : MonoBehaviour
 {
-    public GameObject cubePrefab;
+    ObjectPooler objectPooler;
 
-    //every fixed update spawns a cube
-    void FixedUpdate()
+    private void Start()
     {
-        Instantiate(cubePrefab, transform.position, Quaternion.identity); 
+        objectPooler = ObjectPooler.Instance;
+    }
+    void FixedUpdate() 
+    {
+        objectPooler.SpawnFromPool("Cube", transform.position, Quaternion.identity);
     }
 }
