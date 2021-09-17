@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 30428451}
   - component: {fileID: 30428450}
   - component: {fileID: 30428449}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 205115118}
   - component: {fileID: 205115117}
   - component: {fileID: 205115116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-39268
+  m_Name: pb_Mesh17490
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -483,7 +483,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-39266
+  m_Name: pb_Mesh17416
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 551026793}
   - component: {fileID: 551026792}
   - component: {fileID: 551026791}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4311,7 +4311,7 @@ GameObject:
   - component: {fileID: 650350204}
   - component: {fileID: 650350203}
   - component: {fileID: 650350202}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stairs (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7714,6 +7714,36 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &663597936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 663597937}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &663597937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663597936}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.82, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1067361357}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &949011402
 GameObject:
   m_ObjectHideFlags: 0
@@ -7726,7 +7756,7 @@ GameObject:
   - component: {fileID: 949011406}
   - component: {fileID: 949011405}
   - component: {fileID: 949011404}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7816,7 +7846,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-38388
+  m_Name: pb_Mesh17472
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7984,6 +8014,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1067361357}
   - component: {fileID: 1067361356}
+  - component: {fileID: 1067361358}
   m_Layer: 0
   m_Name: First Person Player
   m_TagString: Untagged
@@ -8005,7 +8036,7 @@ CharacterController:
   m_Height: 3.8
   m_Radius: 0.6
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.7
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -8017,14 +8048,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067361355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 3.68, y: 5.55, z: 1.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 422268752}
   - {fileID: 525306691}
+  - {fileID: 663597937}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1067361358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067361355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3bdab53c0eb6f4f9ae69e3fd036d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1067361356}
+  speed: 12
+  gravity: -20
+  groundCheck: {fileID: 663597937}
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1164984605
 GameObject:
   m_ObjectHideFlags: 0
@@ -8037,7 +8089,7 @@ GameObject:
   - component: {fileID: 1164984609}
   - component: {fileID: 1164984608}
   - component: {fileID: 1164984607}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8225,7 +8277,7 @@ GameObject:
   - component: {fileID: 1613460038}
   - component: {fileID: 1613460037}
   - component: {fileID: 1613460036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8321,7 +8373,7 @@ GameObject:
   - component: {fileID: 1675075473}
   - component: {fileID: 1675075472}
   - component: {fileID: 1675075471}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stairs(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11730,7 +11782,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-29792
+  m_Name: pb_Mesh17402
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11897,7 +11949,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1867969686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enviroment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11939,7 +11991,7 @@ GameObject:
   - component: {fileID: 1871781570}
   - component: {fileID: 1871781569}
   - component: {fileID: 1871781568}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stairs(Clone) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

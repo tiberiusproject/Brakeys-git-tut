@@ -11,7 +11,7 @@ public class MouseLook : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;//mouse sa fie pe centru la incput
+        Cursor.lockState = CursorLockMode.Locked;//mouse sa fie pe centru la inceput si invizibil
     }
 
     // Update is called once per frame
