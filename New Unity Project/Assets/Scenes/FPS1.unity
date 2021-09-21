@@ -594,6 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  lookSensitivity: 3
 --- !u!4 &895345605
 Transform:
   m_ObjectHideFlags: 0
@@ -622,6 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c89b4a9a5e822d8458351b8d8aa75377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 1778720249}
 --- !u!1 &1196481787
 GameObject:
   m_ObjectHideFlags: 0
